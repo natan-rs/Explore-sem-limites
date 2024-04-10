@@ -216,7 +216,7 @@ input, textarea {
   }
 
   header h1 {
-    padding-top: 35vh;
+    padding-top: 28rem;
     font-size: 5.8rem;
     font-weight: 900;
   }
@@ -225,7 +225,7 @@ input, textarea {
     font-size: 3.2rem;
     font-weight: 600;
 
-    margin-bottom: 15vh;
+    margin-bottom: 8rem;
   }
 
   #astroplanet {
