@@ -1,0 +1,300 @@
+/* All */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-back1: #f9f4fb;
+  --color-hh: #B52184;
+  --color-hp: #312D64;
+  --color-main: #312D64;
+  --color-white: white;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: var(--color-back1);
+}
+
+#app {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+
+/* Header */
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container > #astroplanet {
+  width: 100%;
+}
+
+header {
+  padding: 0 3.2rem;
+}
+
+h1 {
+  color: var(--color-hh);
+}
+
+header h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  margin-top: 1rem;
+}
+
+p {
+  color: var(--color-hp);
+}
+
+header p {
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin-bottom: 3.5rem;
+}
+
+#arrow {
+  margin-bottom: 9.5rem;
+}
+
+
+/* Main */
+.main {
+  background-color: var(--color-main);
+  overflow-y: auto;
+}
+
+.infos h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+
+  margin-top: 2rem;
+}
+
+.infos p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 26.5rem;
+
+  margin-top: 0.5rem;
+}
+
+.info1 {
+  background-color: var(--color-white);
+  margin: 5.2rem 4rem;
+  padding: 2.6rem;
+
+  border-radius: 2rem;
+}
+
+#img1, #img2, #img3 {
+  width: 8rem;
+  height: 8rem;
+}
+
+
+/* Aside */
+.aside {
+  background-color: var(--color-back1);
+
+  margin: 7.5rem 4rem 6.5rem 4rem;
+}
+
+.aside h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  margin-bottom: 3.8rem;
+}
+
+input {
+  padding: 12px 16px 12px 14px;
+
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+#name {
+  background-image: url(assets/person.png);
+  background-repeat: no-repeat;
+  background-position: 1rem;
+
+  padding-left: 4rem;
+}
+
+#email {
+  background-image: url(assets/at.png);
+  background-repeat: no-repeat;
+  background-position: 1rem;
+
+  padding-left: 4rem;
+}
+
+textarea {
+  width: 100%;
+  height: 12.5rem;
+}
+
+#message {
+  padding: 12px 16px 16px 16px;
+}
+
+input, textarea {
+  border: 2px solid var(--color-main);
+  border-radius: 16px;
+
+  background-color: var(--color-back1);
+  color: var(--color-main);
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: Mulish;
+
+  resize: none;
+}
+
+.button {
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+
+  color: var(--color-white);
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  font-family: Mulish;
+
+  border: none;
+  margin-top: 2.4rem;
+}
+
+.button:hover {
+  background: linear-gradient(96deg, #201d6d 0%, #201c4d 99.68%);
+}
+
+.aside2Desk {
+  display: none;
+}
+
+
+/* Footer */
+.footer {
+  background-color: var(--color-main);
+  color: var(--color-white);
+  font-family: Mulish;
+
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+
+  padding: 3rem;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+/* Desktop */
+@media(min-width: 1024px) {
+
+  /* Header */
+  .container{
+    display: flex;
+    flex-direction: row-reverse;
+
+    max-height: 100vh;
+  }
+
+  header h1 {
+    padding-top: 35vh;
+    font-size: 5.8rem;
+    font-weight: 900;
+  }
+
+  header p {
+    font-size: 3.2rem;
+    font-weight: 600;
+
+    margin-bottom: 15vh;
+  }
+
+  #astroplanet {
+    padding-bottom: 10rem;
+  }
+
+  .headerDesk {
+    width: 100%;
+    padding-left: 11rem;
+
+    text-align: left;
+  }
+
+
+  /* Main */
+  .infos {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 4rem 11rem;
+  }
+
+  .info1 {
+    width: 36.6rem;
+    height: 44.8rem;
+
+    padding: 3.2rem;
+  }
+
+  #img1, #img2, #img3 {
+    width: 9.7rem;
+    height: 9.7rem;
+  }
+
+  .infos h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+  
+    margin-top: 2.8rem;
+  }
+  
+  .infos p {
+    font-size: 1.9rem;
+    font-weight: 600;
+    width: 32rem;
+  
+    margin-top: 1rem;
+  }
+
+  /* Aside */
+  .aside1Desk {
+    width: 59.2rem;
+
+    margin-top: 9.5rem;
+    margin-left: 15rem;
+    margin-bottom: 9.4rem;
+  }
+
+  .aside2Desk {
+    display: block;
+  }
+
+  .aside{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
