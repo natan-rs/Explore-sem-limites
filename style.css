@@ -205,14 +205,14 @@ input, textarea {
 /* ------------------------------------------------------------------------------ */
 
 /* Desktop */
-@media(min-width: 1024px) {
+@media(min-width: 1200px) {
 
   /* Header */
   .container{
     display: flex;
     flex-direction: row-reverse;
 
-    max-height: 100vh;
+    max-height: 73rem;
   }
 
   header h1 {
@@ -296,5 +296,3 @@ input, textarea {
   }
 
 }
-
-
